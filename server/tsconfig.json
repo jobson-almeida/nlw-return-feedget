@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "module": "commonjs",
+    "rootDirs": ["./src", "./tests"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/tests/*": ["./tests/*"],
+      "@/adapters/*": ["./src/adapters/*"],
+      "@/factories/*": ["./src/factories/*"],
+      "@/repositories/*": ["./src/repositories/*"],
+      "@/use-cases/*": ["./src/use-cases/*"]
+    },
+    "incremental": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "noImplicitOverride": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "removeComments": true
+  },
+  "include": ["./src", "./tests"],
+  "exclude": ["node_modules", "dist"]
+}
