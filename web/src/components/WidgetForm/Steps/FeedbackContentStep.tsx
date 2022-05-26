@@ -52,7 +52,7 @@ export function FeedbackContentStep({
       <form className="mt-4 w-full" onSubmit={handleSubmitFeedback}>
         {feedbackType !== "EVALUATION" ? (
           <textarea
-            className="form-textarea mb-[1.5px] min-h-[7rem] w-full resize-none rounded-md border-zinc-600 bg-[#ffffff] bg-transparent text-sm text-[#71717a] scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-700 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand dark:bg-surface-primary dark:text-secondary"
+            className="form-textarea mb-[1.5px] min-h-[112px] w-full resize-none rounded-md border-zinc-600 bg-[#ffffff] bg-transparent text-sm text-[#71717a] scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-700 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand dark:bg-surface-primary dark:text-secondary"
             placeholder="Conte-nos com detalhes o que está acontecendo"
             onChange={(event) => setComment(event.target.value)}
           />

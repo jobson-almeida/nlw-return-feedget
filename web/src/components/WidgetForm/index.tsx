@@ -86,7 +86,7 @@ export function WidgetForm() {
   }
 
   return (
-    <div className="relative mb-4 flex h-[16.5rem] w-[calc(100vw-2rem)] min-w-[21rem] flex-col items-center rounded-2xl bg-[#ffffff] p-4 font-inter shadow-3xl dark:bg-surface-primary md:w-auto">
+    <div className="relative mb-4 flex h-[264px] w-[calc(100vw-32px)] min-w-[336px] flex-col items-center rounded-2xl bg-[#ffffff] p-4 font-inter shadow-3xl dark:bg-surface-primary md:w-auto">
       {feedbackError ? (
         <FeedbackErrorStep onFeedbackRestartRequested={handleRestartFeedback} />
       ) : (
