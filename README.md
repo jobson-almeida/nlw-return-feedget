@@ -1,15 +1,17 @@
-<p align="center">
-<a href="https://github.com/jobsonra/nlw-return-feedget"><img alt="feedget logo" src="https://raw.githubusercontent.com/jobsonra/nlw-return-feedget/main/web/src/assets/feedget.svg"></a>
-</p>
+![feedget logo](https://raw.githubusercontent.com/jobsonra/nlw-return-feedget/main/web/src/assets/feedget.svg)
 
 ## Description
 
-This project is a private take on **Feedget**, a feedback app developed by 🚀[Rocketseat](https://www.rocketseat.com.br) during the **NLW Return**, an intense week-long event, where we were offered the possibility to explore concepts and share knowledge about tools and technologies.
+Este projeto é uma versão pessoal do **Feedget**, uma aplicação de feedback desenvolvida pela 🚀[Rocketseat](https://www.rocketseat.com.br) durante o **NLW Return**, um evento intenso e único de uma semana, onde tive a oportunidade de explorar conceitos e compartilhar conhecimentos sobre ferramentas e tecnologias.\
+Nesta versão customizada pude colocar em prática alguns dos princípios de desenvolvimento do SOLID, desenvolver testes e otimizar a captura de tela. Além disso, criei um processo de classificação e defini o tema de acordo com a aparência do navegador, entre outros pontos de acessibilidade.\
+Seu status atual está aberto a melhorias e permite expansão.\
+&nbsp;
 
-## Languages and Tools
+## Linguagens e Ferramentas
 
-</br> 
-<p align="left">
+&nbsp;
+
+<p>  
     <a
     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     target="_blank"
@@ -22,7 +24,7 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
       width="40"
       height="40"
     />
-  </a>
+  </a>&nbsp;  
   <a href="https://www.prisma.io/" target="_blank" rel="noreferrer">
     <img
       src="https://cdn.worldvectorlogo.com/logos/prisma-3.svg"
@@ -31,7 +33,7 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
       width="40"
       height="40"
     />
-  </a>
+  </a>&nbsp;
   <a href="https://jestjs.io" target="_blank" rel="noreferrer">
     <img
       src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
@@ -40,7 +42,7 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
       width="40"
       height="40"
     />
-  </a>
+  </a>&nbsp;
   <a href="https://nodejs.org" target="_blank" rel="noreferrer">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
@@ -49,7 +51,7 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
       width="40"
       height="40"
     />
-  </a>
+  </a>&nbsp;
       <a href="https://nodemailer.com/about/" target="_blank" rel="noreferrer">
     <img
       src="https://nodemailer.com/nm_logo_200x136.png"
@@ -58,7 +60,7 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
       width="58.82352"
       height="40"
     />
-  </a> 
+  </a>&nbsp;
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
@@ -67,7 +69,7 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
       width="40"
       height="40"
     />
-  </a>
+  </a>&nbsp;
   <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer">
     <img
       src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
@@ -76,7 +78,7 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
       width="40"
       height="40"
     />
-  </a>
+  </a>&nbsp;
   <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
     <img
       src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
@@ -85,7 +87,7 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
       width="40"
       height="40"
     />
-  </a>
+  </a>&nbsp;
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
@@ -94,7 +96,7 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
       width="40"
       height="40"
     />
-  </a>
+  </a>&nbsp;
     <a
     href="https://www.npmjs.com/"
     target="_blank"
@@ -109,20 +111,26 @@ This project is a private take on **Feedget**, a feedback app developed by 🚀[
     />
   </a>
 </p>
+ 
+&nbsp;
 
-## Installation
+## Instalação
 
 ```javascript
-# Install web application dependencies from folder web
+# Instalar dependências do servidor
+$ cd server
 $ npm install
 ```
 
 ```javascript
-# Install server dependencies from folder server
+# Instalar dependências da aplicação web
+$ cd ..\web
 $ npm install
 ```
 
-To use Prisma and Nodemailer, set the variables in the `.env` file, located in the server folder, and enter the database path and email credentials.
+&nbsp;
+
+### Para usar o Prisma e o Nodemailer, crie o arquivo `.env`, insira essas variáveis e defina as credenciais de e-mail.
 
 ```dosini
 DOMAIN="localhost"
@@ -132,38 +140,44 @@ DATABASE_URL="file:./dev.db"
 
 NODEMAILER_HOST="host"
 NODEMAILER_PORT=0000
-NODEMAILER_USER="user"
-NODEMAILER_PASS="pass"
-NODEMAILER_FROM="title <user@email.com>"
-NODEMAILER_TO="title <user@email.com>"
+NODEMAILER_USER="usuário"
+NODEMAILER_PASS="senha"
+NODEMAILER_FROM="título <usuário@email.com>"
+NODEMAILER_TO="título <usuário@email.com>"
 ```
 
-## Creating the database
+&nbsp;
+
+## Criando o banco de dados
 
 ```javascript
 # cd server
 $ npm run database:dev
 ```
 
-## Running the app
+## Executando o projeto
 
 ```javascript
-# Start server from your folder
+# Iniciando servidor
+$ cd server
 $ npm run build
 $ npm run start
 
-# Launch web application from your folder
+# Iniciando aplicação web
+$ cd ..\web
 $ npm run build
 $ npm run start
 ```
 
-## Test
+## Teste
 
 ```javascript
-# Run tests on server folder
+# Executar testes do servidor
+$ cd server (in root folder)
 $ npm run test
-
 ```
+
+&nbsp;
 
 ---
 
